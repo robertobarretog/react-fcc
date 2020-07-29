@@ -117,13 +117,14 @@ const Calculator = () => {
     if (error) {
       setCalc(['0']);
     } else {
-      // Sanitize before using eval
+      // Sanitize before using eval - removes everything that isnt a digit, decimal or operators
       const sanitized = calc.join('').replace(/[^-()\d/*+.]/g, ''); //eslint-disable-next-line
       const calcResult = eval(sanitized);
       if (calcResult) {
         setCalc(calcResult.toString().split(''));
       } else {
         setCalc(['0']);
+        setCalcHist('');
       }
     }
   };
