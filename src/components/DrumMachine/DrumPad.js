@@ -1,13 +1,9 @@
 import React from 'react';
 
-import classes from './DrumMachine.module.css';
+import './DrumMachine.css';
 
 const DrumPad = ({ name, source, letter, keyClicked }) => (
-  <div
-    className={classes.DrumPad}
-    id={name}
-    onClick={() => keyClicked(name, letter)}
-  >
+  <div className="drum-pad" id={name} onClick={() => keyClicked(name, letter)}>
     <audio src={source} className="clip" id={letter}></audio>
     <p>{letter}</p>
   </div>

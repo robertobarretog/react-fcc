@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import DrumPad from './DrumPad';
 import { sounds } from '../../utils/sounds';
-import classes from './DrumMachine.module.css';
+import './DrumMachine.css';
 
 const DrumMachine = () => {
   const [soundName, setSoundName] = useState('');
@@ -46,13 +46,15 @@ const DrumMachine = () => {
   ));
 
   return (
-    <div id="drum-machine" className={classes.DrumApp}>
-      <h1 className={classes.title}>JavaScript Drum Machine</h1>
-      <p className={classes.info}>
-        Click the buttons or press the keys on your keyboard to play sounds
-      </p>
-      <div className={classes.DrumPads}>{drumPads}</div>
-      <p id="display">{soundName || 'Press a key'}</p>
+    <div className="drum-overlay">
+      <div id="drum-machine" className="drum-app">
+        <h1 className="title">JavaScript Drum Machine</h1>
+        <p className="info lead">
+          Click the buttons or press the keys on your keyboard to play sounds
+        </p>
+        <div className="drum-pads">{drumPads}</div>
+        <p id="display">{soundName || 'Press a key'}</p>
+      </div>
     </div>
   );
 };

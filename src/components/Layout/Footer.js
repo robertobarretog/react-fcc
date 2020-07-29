@@ -1,15 +1,15 @@
 import React from 'react';
 
 const Footer = () => (
-  <footer id="main-footer">
-    <div className="footer-content container">
+  <footer className="main-footer">
+    <div className="footer-content">
+      <span>Roberto Barreto &copy; {new Date().getFullYear()}</span>
       <a
         href="https://github.com/robertobarretog"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Roberto Barreto &copy; {new Date().getFullYear()}
-        <i className="fab fa-github"></i>
+        <i className="fab fa-github fa-2x"></i>
       </a>
     </div>
   </footer>
