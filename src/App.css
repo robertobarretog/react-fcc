@@ -3,6 +3,8 @@
   --light-color: #e9e9db;
   --primary-color: #6a402c;
   --secondary-color: #ec7c61;
+  --danger-color: #f44336;
+  --success-color: #6bbf7a;
 }
 
 * {
@@ -61,7 +63,7 @@ body {
   font-size: 24px;
 }
 
-.active {
+.main-nav.active {
   display: block;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;

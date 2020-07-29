@@ -52,6 +52,10 @@
   padding: 1rem 2rem;
 }
 
+.drum-pad.active {
+  background-color: var(--secondary-color);
+}
+
 .drum-pads div:nth-child(1) {
   grid-area: Q;
 }
