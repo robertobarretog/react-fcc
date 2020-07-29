@@ -51,6 +51,15 @@ const Header = () => {
               Calculator
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/markdown"
+              className="nav-link"
+              activeClassName="current"
+            >
+              Markdown
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>
